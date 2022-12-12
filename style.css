@@ -640,7 +640,60 @@ form.search button:hover {
 
 
     /*02 slider*/
+/* .slider > div> .wrapper {
+    width: calc(100% - (300px + 2em));
+    margin-left: auto;
+} */
 
+.slider .item {
+    position: relative;
+    height: 474px;
+}
+
+.slider .item::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: .8;
+}
+
+.slider .text-content {
+    position: relative;
+    height: var(--percent100);
+    justify-content: flex-end;
+    padding: 0 0 10% 10%;
+    z-index: 1;
+}
+
+.slider h4 {
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    width: fit-content;
+    padding: 4px 10px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
+.text-content :where(h2, h3) span:first-child {
+    font-weight: var(--fw3);
+    columns: var(--light-text-color);
+}
+
+.text-content :where(h2, h3) span:last-child {
+    color: var(--secondary-dark-color);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--secondary-dark-color);
+}
 
 
 /*03.brands*/
@@ -821,7 +874,7 @@ form.search button:hover {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(0, 0, 0, 0.234)0%);
+            background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(0, 0, 0, 0.463));
         }
 
         .dpt-menu .mega{
@@ -831,5 +884,10 @@ form.search button:hover {
         }
         .dpt-menu .has-child:hover .mega {
             display: flex;
+        }
+        /*slider*/
+        .slider > div> .wrapper {
+            width: calc(100% - (300px + 2em));
+            margin-left: auto;
         }
     }
