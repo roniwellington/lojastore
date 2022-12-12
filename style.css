@@ -697,7 +697,20 @@ form.search button:hover {
 
 
 /*03.brands*/
+.brands .wrapper {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
 
+.brands .item img {
+    opacity: .25;
+    transition: opacity .3s;
+}
+
+.brands .item a:hover img {
+    opacity: 1;
+}
 
 
 
